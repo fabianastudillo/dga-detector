@@ -27,8 +27,8 @@ KNN = MethodsML.KNearestNeighbors(X_train, y_train, neighbors,
 joblib.dump(KNN, "KNN.joblib")
 
 # Support Vectorial Machines
-core = "rbf"                    # Kernel type
-reg = 50                        # Regularization parameter
+core = "linear"                 # Kernel type
+reg = 300                       # Regularization parameter
 gam = "scale"                   # Kernel coefficient
 SVM = MethodsML.SupportVectorialMachines(X_train, y_train, core, reg, folds, gam)
 joblib.dump(SVM, "SVM.joblib")
@@ -41,7 +41,6 @@ features = "sqrt"               # Maximum number of features
 RF = MethodsML.RandomForest(X_train, y_train, estimators, 
                             depth, typeCriterion, features, folds)
 joblib.dump(RF, "RF.joblib")
-
  
 # Multi-Layer Perceptron
 act = "relu"                    # Activation function
