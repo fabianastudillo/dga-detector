@@ -1,7 +1,3 @@
-#Machine Learning: RF, SVM, KNN y MLP
-#Universidad de Cuenca
-#Adrian Fernandez & Linder Quizhpe
-
 import MethodsML
 import pandas as pd
 import joblib
@@ -55,24 +51,3 @@ hidden = 128                    # Number of hidden layers
 MLP = MethodsML.MultiLayerPerceptron(X_train, y_train, act, 
                                      learning, learning_type, hidden, folds)
 joblib.dump(MLP, "MLP.joblib")
-
-'''
-############################ Modelos Entrenados ###############################
-#RF = joblib.load(f"./RF-{sufijo}.joblib")
-#SVM = joblib.load(f"./SVM-{sufijo}.joblib")
-#KNN = joblib.load(f"./KNN-{sufijo}.joblib")
-#MLP = joblib.load(f"./MLP-{sufijo}.joblib")
-
-################################ Resultados ###################################
-#Metricas de Evaluacion: RF, SVM, KNN, MLP
-#R_RF  = Results.Metrics("Random Forest:",               RF,  y_test, RF.predict(X_test))
-#R_SVM = Results.Metrics("Support Vectorial Machines:",  SVM, y_test, SVM.predict(X_test))
-#R_KNN = Results.Metrics("K-Nearest Neighbors:",         KNN, y_test, KNN.predict(X_test))
-R_MLP = Results.Metrics("Multi-Layer Perceptron:",      MLP, y_test, MLP.predict(X_test))
-
-#Matriz de Confusion
-#Results.Graphics("Random Forest",              RF, RF.predict(X_test) , X_train, X_test, y_train, y_test)
-#Results.Graphics("Support Vectorial Machines", SVM, SVM.predict(X_test), X_train, X_test, y_train, y_test)
-#Results.Graphics("K-Nearest Neighbors",        KNN, KNN.predict(X_test), X_train, X_test, y_train, y_test)
-#Results.Graphics("Multi-Layer Perceptron",     MLP, MLP.predict(X_test), X_train, X_test, y_train, y_test)
-'''
