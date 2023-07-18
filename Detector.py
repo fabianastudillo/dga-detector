@@ -1,5 +1,4 @@
 import joblib
-import subprocess
 import json
 import time
 import socket
@@ -7,13 +6,12 @@ import signal
 import pandas as pd
 import numpy as np
 import tldextract
-import warnings
 from DataPreparation import DataPreparation
 from maskgrams import maskgrams
 #warnings.simplefilter(action='ignore', category=FutureWarning)
 
 # Load machine learning models
-ModelMaldom = joblib.load("./KNN-Maldom2.joblib")
+ModelMaldom = joblib.load("./KNN-Maldom.joblib")
 ModelMG = joblib.load("./RF-MG.joblib")
 print('Modelos Cargados')
 
