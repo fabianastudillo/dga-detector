@@ -71,7 +71,8 @@ def DataPreparation(domain):
         consonants = 0.1
     if (max_cons == 0):
         max_cons = 0.1
-        
+
+    # Features selected by PCA
     F1 = entropy            # Domain Entropy
     F2 = max_cons           # Maximum number of sequential consonants
     F3 = max_vow            # Maximum number of sequential vowels
@@ -80,8 +81,12 @@ def DataPreparation(domain):
     F6 = vowels             # Number of vowels
     F7 = F1/F4              # Ratio entropy to length domain
     F8 = F5/F6              # Ratio consonants to vowels
+    #F9 is not used
     F10 = F6/F4             # Ratio vowels to length domain
+    #F11 is not used
     F12 = F3/F4             # Ratio max sequential vowels to length domain
+    #F13 is not used
+    #F14 is not used
     F15 = F2/F3             # Ratio max sequential consonants to max sequential vowels
     F16 = category          # Randomness (Output of RMA)
     Features = [F1,F2,F3,F4,F5,F6,F7,F8,F10,F12,F15,F16]
