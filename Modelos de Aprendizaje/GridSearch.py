@@ -6,11 +6,12 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 def GridSearch(model, modelGrid):
     ############################### Data Read #####################################
     archivo = input("1: MaldomDetector\n2: N-grams Masked\n-> ")
-    
+
+    # Test database (50k domains)
     if archivo == "1":
         domains = pd.read_excel("FeaturesDatabaseMaldom.xlsx") #Domain features
     elif archivo == "2":
-        domains = pd.read_excel("FeaturesDatabaseMG.xlsx") #Domain features
+        domains = pd.read_excel("FeaturesDatabaseMG.xlsx")     #Domain features
     else:
         print("Error")
         sys.exit(0)
