@@ -9,9 +9,9 @@ def GridSearch(model, modelGrid):
 
     # Test database (50k domains)
     if archivo == "1":
-        domains = pd.read_excel("FeaturesDatabaseMaldom.xlsx") #Domain features
+        domains = pd.read_excel("FeaturesDatabaseMaldom.xlsx") # Domain features
     elif archivo == "2":
-        domains = pd.read_excel("FeaturesDatabaseMG.xlsx")     #Domain features
+        domains = pd.read_excel("FeaturesDatabaseMG.xlsx")     # Domain features
     else:
         print("Error")
         sys.exit(0)
