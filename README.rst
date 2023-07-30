@@ -7,7 +7,8 @@ Install process
 .. code-block:: bash
 
   git clone -b Docker https://github.com/fabianastudillo/dga-detector.git
-  cd bndf/
+  
+  cd dga-detector/
   docker-compose up -d
 
 Useful commands
