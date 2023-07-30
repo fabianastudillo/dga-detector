@@ -7,8 +7,8 @@ Install process
 .. code-block:: bash
 
   git clone -b Docker https://github.com/fabianastudillo/dga-detector.git
-  unrar x KNN-Maldom.rar
-  unrar x RF-MG.part01.rar
+  unrar x ./dga-detector/dgam-uc/models/KNN-Maldom.rar -d ./dga-detector/dgam-uc/models/
+  unrar x ./dga-detector/dgam-uc/models/RF-MG.part01.rar -d ./dga-detector/dgam-uc/models/
   cd dga-detector/
   docker-compose up -d
 
