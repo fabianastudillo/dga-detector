@@ -1,0 +1,15 @@
+input {
+  gelf {
+# This information is send using graylog from CEDIA
+    port => 10000
+    use_tcp => true
+#    type => "graylog"
+  }
+}
+output {
+  file {
+    path => ["/var/log/logstash.log"]
+  }
+#  stdout {
+#  }
+}
