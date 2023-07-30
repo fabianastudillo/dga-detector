@@ -1,1 +1,1 @@
-# dga-detector
+# BNDF + DGA Detector on Docker
