@@ -10,6 +10,7 @@ Install process
   unrar x ./dga-detector/dgam-uc/models/KNN-Maldom.rar -d ./dga-detector/dgam-uc/models/
   unrar x ./dga-detector/dgam-uc/models/RF-MG.part01.rar -d ./dga-detector/dgam-uc/models/
   cd dga-detector/
+  docker-compose build
   docker-compose up -d
 
 Useful commands
