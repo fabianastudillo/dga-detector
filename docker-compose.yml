@@ -169,7 +169,8 @@ services:
       network:
     
     ports:
-      - 10.0.2.96:9999:9999
+      - 127.0.0.1:9999:9999
+      #- 10.0.2.96:9999:9999
       
     volumes:    
       - dga-data:/var/log/dga
