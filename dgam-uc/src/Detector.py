@@ -28,10 +28,6 @@ with open('/dga/others/Whitelist.txt', "r") as archivo:
 Whitelist = pd.DataFrame()
 Whitelist['Whitelist'] = lista
 
-def obtener_sld(dominio):
-    ext = tldextract.extract(dominio)
-    return ext.domain
-
 def interruptions(sig, frame):
     # Save results
     with open(f'/dga/results/Queries-{DateTime}.txt', 'a') as file:
